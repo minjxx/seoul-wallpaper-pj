@@ -28,27 +28,16 @@ dFn.addEvt(window, "keyup", () => setPos(window.scrollY));
     함수 : scrTopBtn
     기능 : 사이트 탑버튼 (클릭시 페이지 최상단으로 이동)
 *********************************************/
-// let scrTopBtn = dFn.qs("#topBtn");
-// // console.log('탑버튼:',scrTopBtn);
+let scrTopBtn = dFn.qs("#topBtn");
+// console.log('탑버튼:',scrTopBtn);
 
-// scrTopBtn.addEventListener("click", (e) => {
-//     // 기본기능 막기 : preventDefault()
-//     e.preventDefault();
-//     // 페이지 이동하기 : scrollTo()
-//     // window.scrollTo({ top: 0, behavior: "smooth" });
-//     setPos(0);
-// });
-
-//테스트 260325
-const toptopbtn = document.querySelector("#topBtn");
-
-toptopbtn.addEventListener("click", () => {
-    console.log("클릭됨"); // 이거 찍히면 이벤트 정상
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
+scrTopBtn.addEventListener("click", (e) => {
+    // 기본기능 막기 : preventDefault()
+    e.preventDefault();
+    // 페이지 이동하기 : scrollTo()
+    // window.scrollTo({ top: 0, behavior: "smooth" });
+    setPos(0);
+});
 //////////////// scrTopBtn ///////////////////
 
 // [ gnb메뉴에 마우스 오버시 header에 .bgWhite 클래스 넣어서 흰색배경 나오게하기 ]
