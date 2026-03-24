@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* 리셋 CSS - reset.css */
+/* 기본 초기화 셋팅 */
+html, body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li,footer, header, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+} */
+body {
+	color: var(--main-black);
+	line-height: 1.45;
+	overflow-x: hidden;
+	font-size: 1.8rem;
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+}
+ol, ul {
+	list-style: none;
+}
+button, input, select, textarea {
+    color: inherit;
+    font-family: 'Noto Sans KR', sans-serif;
+    vertical-align: middle;
+}
+/* a요소 리셋 */
+a{
+    color: #222;
+    text-decoration: none;
+}
+/* 이미지태그 여백없애기 */
+img {
+	vertical-align: middle;
+}
+
+/* 스크롤바 전체 기본 꾸미기 */
+body::-webkit-scrollbar {
+	width: 9px;
+}
+
+/* 스크롤바 막대 꾸미기 */
+body::-webkit-scrollbar-thumb {
+	background-color: #667475;
+	border-radius: 50px;
+}
+
+/* 스크롤바 트랙 꾸미기 */
+body::-webkit-scrollbar-track {
+	background-color: #f6f6f6;
+}
+
+/* 마우스 드래그 색상 */
+::-moz-selection {
+	background: #667475;
+	color: #fff;
+ }
+ ::selection {
+	background: #667475;
+	color: #fff;
+ }

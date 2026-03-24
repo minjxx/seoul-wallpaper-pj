@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/* 공통 클래스 CSS - core.css */
+
+/* 웹폰트 설정 */
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 300;
+    src: url(./fonts/NotoSansKR-Light.woff) format("woff");
+}
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/NotoSansKR-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 500;
+    src: url(./fonts/NotoSansKR-Medium.woff) format("woff");
+}
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 700;
+    src: url(./fonts/NotoSansKR-Bold.woff) format("woff");
+}
+@font-face {
+    font-family: "Crimson text";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/CrimsonText-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: "Crimson text";
+    font-style: normal;
+    font-weight: 600;
+    src: url(./fonts/CrimsonText-SemiBold.woff) format("woff");
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/Roboto-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url(./fonts/Roboto-Medium.woff) format("woff");
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url(./fonts/Roboto-Bold.woff) format("woff");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+select {
+    -webkit-appearance:none; /* 크롬 화살표 없애기 */
+    -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
+    appearance:none /* 화살표 없애기 */
+}
+
+.crimson {
+    font-family: 'Crimson text';
+}
+.roboto {
+    font-family: 'Roboto';
+}
+
+.linkCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.hide {
+    position: absolute !important;
+    left: -99999px !important;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 64px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: .3s ease;
+    font-size: 1.4rem;
+}
+
+/* 더보기 버튼 */
+#main .moreBtn {
+    position: absolute;
+    right: 3.1vw;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    color: #667475;
+    font-weight: 500;
+    background-image: url(../images/moreBtn.png);
+    background-repeat: no-repeat;
+    padding-right: 50px;
+    background-position: right 7px center;
+    transition: .3s;
+    opacity: .7;
+}
+#main .moreBtn:hover {
+    opacity: 1;
+    background-position: right 0 center;
+}
+
+/* 슬라이드 페이지네이션 */
+.pagebtn.swiper-pagination-bullets > .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 7px;
+    opacity: 1;
+    background-color: transparent;
+    border: 1px solid var(--main-black);
+    box-sizing: border-box;
+}
+.pagebtn.swiper-pagination-bullets > .swiper-pagination-bullet-active {
+    background-color: var(--main-black);
+}

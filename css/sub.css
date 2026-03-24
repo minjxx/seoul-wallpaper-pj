@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+/* 리셋,공통 외부 CSS 합치기 */
+@import url(./reset.css);
+@import url(./core.css);
+@import url(./common.css);
+@import url(./media.css);
+
+/**************************** 서브페이지 css  ****************************/
+.subVisual {
+    position: relative;
+    width: 100%;
+    height: 870px;
+    color: #fff;
+}
+.subVisual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.subVisual .txtBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 117px;
+    text-align: center;
+    overflow: hidden;
+}
+.subVisual .txtBox > * {
+    animation: subTitTop 2s ease;
+    animation-fill-mode: forwards;
+}
+@keyframes subTitTop {
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.subVisual .txtBox dt {
+    font-size: 5rem;
+}
+.subVisual .txtBox dd {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.subContainer {
+    background-color: #f9f9f9;
+}
+.subContWrap {
+    width: 100%;
+}
+.subContBox {
+    padding:0 8.8vw;
+}
+.boardSearchWrap {
+    display: flex;
+    justify-content: space-between;
+}
+.boardSearchWrap .boardList {
+    display: flex;
+    align-items: center;
+    margin: 55px 0 24px;
+}
+.boardSearchWrap .boardList li a {
+    display: inline-block;
+    margin-right: 30px;
+    opacity: .4;
+}
+.boardSearchWrap .boardList li.on a {
+    text-decoration: underline;
+    font-weight: 500;
+    opacity: 1;
+}
+.boardSearchWrap .srchInput {
+    position: relative;
+    width: 320px;
+    margin-top: 32px
+}
+.boardSearchWrap .srchInput input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #e0e0e0;
+    padding: 0 35px 0 15px;
+    font-size: 1.6rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+}
+.boardSearchWrap .srchInput input::placeholder {
+    color: #333;
+}
+.boardSearchWrap .srchInput button {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/search-box-icon.png);
+    background-size: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.boardSearchWrap .selectBox {
+    display: none;
+    width: 100%;
+    height: 45px;
+    margin-top: 30px;
+    border: 1px solid #e0e0e0;
+    padding: 0 35px 0 15px;
+    font-size: 1.6rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    background-image: url(../images/select_arrowB.svg);
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 11px;
+}
+.notiList ul li {
+    position: relative;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 24px 0;
+}
+.notiList ul li:first-child {
+    border-top: 1px solid #e9e9e9;
+}
+.notiList ul li .linkArea {
+    display: flex;
+    justify-content: space-between;
+}
+.notiList ul li .txtBox {
+    width: 58%;
+    margin-top: 20px;
+}
+.notiList ul li .txtBox .date {
+    font-size: 1.6rem;
+    opacity: .5;
+}
+.notiList ul li .txtBox .title {
+    margin-top: 7px;
+    font-size: 2rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.notiList ul li .imgBox {
+    width: 42%;
+}
+.notiList ul li .imgBox span {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 45%;
+    overflow: hidden;
+}
+.notiList ul li .imgBox img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.notiList ul li .viewBtn {
+    position: absolute;
+    bottom: 46px;
+    left: 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.notiList ul li .viewBtn::after {
+    content: "";
+    display: block;
+    width: 0%;
+    margin-left: 100%;
+    margin-top: 2px;
+    height: 1px;
+    background-color: var(--main-black);
+    transition: 0.3s;
+    opacity: .8;
+}
+.notiList ul li .viewBtn:hover::after {
+    width: 100%;
+    margin-left: 0%;
+    transition: width 0.3s;
+}
+/* 페이징 css */
+.pageWrap {
+    padding: 6vw 0 12vw;
+    text-align: center;
+}
+.pageWrap .pageBox {
+    display: inline-block;
+}
+.pageWrap .pageBox a {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    margin: 0 4px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #4b4b4b;
+    vertical-align: middle;
+}
+.pageWrap .pageBox .pageOn {
+    background-color: #667475;
+    color: #fff;
+    border-radius: 50%;
+}
+.pageWrap .pageBox .pageBtn {
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:8px;
+}
+.pageWrap .pageBox .pageBtn.prev {
+    background-image: url(../images/pager_prev.png);
+    margin-right: 30px;
+}
+.pageWrap .pageBox .pageBtn.next {
+    background-image: url(../images/pager_next.png);
+    margin-left: 30px;
+}

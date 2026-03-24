@@ -1,0 +1,723 @@
+@charset "utf-8";
+
+/* 미디어쿼리 CSS - media.css */
+
+/* 1500px 이하 사이즈 시작 */
+@media screen and (max-width: 1500px) {
+    /* 메인-벽지컬렉션 */
+    #main .con2 .con2-slide .side-text {
+        font-size: 1vw;
+    }
+    #main .con2 .con2-slide .side-text.pc p strong {
+        font-size: 1.3vw;
+    }
+    #main .con2 .con2-slide .side-text .btn {
+        padding: 1vw 3vw;
+        font-size: 1.2vw;
+    }
+
+    /* 푸터 */
+    #footer .foot-list .left {
+        width: 42%;
+    }
+    #footer .foot-list .left ul {
+        width: 100%;
+    }
+    #footer .foot-list .left ul:not(:last-child) {
+        margin-right: 0;
+    }
+    #footer .foot-list .left ul .list-title {
+        margin-bottom: 0;
+    }
+}
+/* 1500px 이하 사이즈 끝 */
+
+/* 1320px 이하 사이즈 시작 */
+@media screen and (max-width: 1320px) {
+    #header .logo {
+        width: 150px;
+        margin-right: 3vw;
+    }
+    #header #gnb > ul > li {
+        padding-right: 25px;
+        font-size: 1.5rem;
+    }
+    #header .right-box .search-box .area.on .search-input {
+        width: 250px;
+    }
+    #footer .footer-wrap .foot-logo {
+        width: 150px;
+    }
+    #footer .foot-list {
+        font-size: 1.4rem;
+    }
+    .allMenuWrap .menuBox {
+        width: 550px;
+    }
+    .allMenuWrap .allMenu li span {
+        font-size: 3.5rem;
+    }
+
+    /* 메인-콘텐츠2 */
+    #main .con2 .title {
+        top: 4vw;
+        font-size: 2.3vw;
+    }
+    #main .con2 .sample-list {
+        top: 8vw;
+    }
+    #main .con2 .sample-list li {
+        margin-bottom: 0.5vw;
+    }
+    #main .con2 .sample-list li button {
+        font-size: 1.3vw;
+    }
+    #main .con2 .sample-list li.on button {
+        font-size: 1.5vw;
+    }
+    #main .con2 .sample-list li:not(:last-child)::after {
+        bottom: -7px;
+    }
+}
+/* 1320px 이하 사이즈 종료 */
+
+/* 1080px 이하 사이즈 시작 */
+@media screen and (max-width: 1080px) {
+    #gnb {
+        display: none;
+    }
+    #header .right-box {
+        right: 9vw;
+    }
+    /* 메인-콘텐츠4 */
+    #main .con4 .top-tit span {
+        font-size: 1.7rem;
+    }
+    #main .con4 .top-tit p {
+        font-size: 7rem;
+    }
+    #main .moreBtn {
+        font-size: 1.4rem;
+    }
+
+    /* 공지사항 */
+    .subContWrap .subContBox {
+        padding: 0 5vw;
+    }
+    .subContBox .notiList ul li {
+        padding: 16px 0;
+    }
+    .subContBox .notiList ul li .txtBox {
+        margin-top: 0;
+    }
+    .subContBox .notiList ul li .txtBox .date {
+        font-size: 1.5rem;
+    }
+    .subContBox .notiList ul li .txtBox .title {
+        margin-top: 5px;
+        font-size: 1.6rem;
+    }
+    .subContBox .notiList ul li .viewBtn {
+        bottom: 20px;
+        font-size: 1.4rem;
+    }
+
+    /* 푸터 */
+    #footer .footer-top li:hover a::before {
+        height: 8.5vw;
+    }
+    #footer .footer-top li:not(:last-child)::after {
+        width: 6px;
+        height: 6px;
+    }
+}
+/* 1080px 이하 사이즈 끝 */
+
+/* 1000px 이하 사이즈 시작 */
+@media screen and (max-width: 1000px) {
+    #footer .foot-list {
+        font-size: 1.3rem;
+    }
+    #footer .foot-list .right ul:not(:last-child) {
+        margin-right: 1.5vw;
+    }
+}
+/* 1000px 이하 사이즈 끝 */
+
+/* 850px 이하 사이즈 시작 */
+@media screen and (max-width: 850px) {
+    #footer .foot-list .left {
+        width: 100%;
+    }
+    #footer .foot-list .left ul:last-child {
+        margin-top: 25px;
+    }
+    #footer .foot-list .right {
+        display: none;
+    }
+}
+/* 850px 이하 사이즈 끝 */
+
+/* 760px 이하 사이즈 시작 */
+@media screen and (max-width: 760px) {
+    /* 마우스 커서 모바일에서 숨김 */
+    .cuser-mover {
+        display: none;
+    }
+    /* 메인비주얼 */
+    .mainVisual .swiper-wrapper .swiper-slide img.pc {
+        display: none;
+    }
+    .mainVisual .swiper-wrapper .swiper-slide img.mo {
+        display: block;
+    }
+    #main .mainVisual > .swiper-pagination {
+        bottom: 40px;
+    }
+    #main .mainVisual .circleTxt {
+        right: 20px;
+        bottom: 40px;
+        width: 150px;
+    }
+    #main .mainVisual .circleTxt .circleBg {
+        width: 60px;
+        height: 60px;
+    }
+    #main .mainVisual .circleTxt .circleBg::after {
+        width: 25px;
+    }
+
+    /* 메인-콘텐츠1 */
+    #main .con1 {
+        height: auto;
+    }
+    #main .con1 .slidePg {
+        position: static;
+        height: auto;
+    }
+    #main .con1 .top-txt{
+        padding: 40px 20px 30px;
+    }
+    #main .con1 .slidePg ul {
+        display: none;
+    }
+    #main .con1 .moArea {
+        display: block;
+    }
+    .con1 .searchArea .txtbox2 {
+        color: #fff;
+        text-align: center;
+    }
+    #main .con1 .searchArea .txtbox2 .toptxt {
+        font-size: 2.5rem;
+    }
+    #main .con1 .searchArea .txtbox2 .subtxt {
+        font-size: 1.4rem;
+    }
+    #main .con1 .searchArea .txtbox2 .schInput {
+        width: 100%;
+    }
+    #main .con1 .searchArea .txtbox2 .schInput input {
+        height: 45px;
+        font-size: 1.5rem;
+        padding: 0 50px 0 20px;
+    }
+    #main .con1 .searchArea .txtbox2 .schInput .srch-btn {
+        top: 12px;
+        right: 20px;
+    }
+    #main .con1 .searchArea .txtbox2 .btn {
+        margin-top: 50px;
+        padding: 14px 35px;
+        font-size: 1.3rem;
+    }
+
+    /* 메인-콘텐츠2 */
+    #main .con2 {
+        height: 650px;
+    }
+    #main .con2 .con2-slide .bg {
+        display: block;
+    }
+    #main .con2 .con2-slide .bg .left {
+        width: 100%;
+        height: 50%;
+    }
+    #main .con2 .con2-slide .bg .right {
+        width: 100%;
+        height: 50%;
+    }
+    #main .con2 .title {
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 40px 20px 8px;
+        font-size: 20px;
+    }
+    #main .con2 .sample-list {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: flex;
+        padding: 0 20px;
+    }
+    #main .con2 .sample-list li {
+        margin-bottom: 0;
+        margin-right: 38px;
+    }
+    #main .con2 .sample-list li:last-child {
+        margin-right: 0;
+    }
+    #main .con2 .sample-list li button,
+    #main .con2 .sample-list li.on button {
+        font-size: 16px;
+    }
+    #main .con2 .sample-list li:not(:last-child)::after {
+        right: -20px;
+        left: auto;
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 13px;
+        margin-top: 3px;
+        background-color: #999;
+    }
+    #main .con2 .con2-slide .img-area {
+        position: relative;
+        transform: none;
+        top: auto;
+        left: auto;
+        width: calc(100% - 40px);
+        height: 260px;
+        margin: 115px auto 0;
+    }
+    #main .con2 .con2-slide .title-box {
+        top: 353px;
+        left: 20px;
+        transform: none;
+    }
+    #main .con2 .con2-slide .title-box .txt1 {
+        display: inline-block;
+        font-size: 5rem;
+    }
+    #main .con2 .con2-slide .title-box.fire {
+        top: 305px;
+    }
+    #main .con2 .con2-slide .title-box .txt2 {
+        font-size: 1.5rem;
+    }
+    #main .con2 .con2-slide .title-box .txt3 {
+        display: none;
+    }
+    #main .con2 .con2-slide .side-text.pc {
+        display: none;
+    }
+    #main .con2 .con2-slide .side-text.mo {
+        display: block;
+    }
+    #main .con2 .con2-slide .swiper-pagination {
+        left: 45px;
+        bottom: 210px;
+        transform: none;
+    }
+    #main .con2 .con2-slide .arrowbtn {
+        bottom: 213px;
+        transform: none;
+    }
+    #main .con2 .con2-slide .swiper-button-prev {
+        left: 20px;
+    }
+    #main .con2 .con2-slide .swiper-button-next {
+        left: 200px;
+    }
+    #main .con2 .con2-slide .img-area .top-text {
+        padding: 12px 15px;
+        font-size: 1.4rem;
+    }
+    #main .con2 .con2-slide .img-area .top-text li:first-child {
+        padding-right: 20px;
+    }
+    #main .con2 .con2-slide .img-area .top-text li:first-child::after {
+        right: 10px;
+    }
+    #main .con2 .con2-slide .img-area .top-text .code::after {
+        left: 5px;
+        width: 8px;
+        height: 8px;
+    }
+    /* 메인-콘텐츠3 */
+    #main .con3 {
+        height: auto;
+        padding-bottom: 12vw;
+    }
+    #main .con3 .title p {
+        font-size: 4.5rem;
+    }
+    #main .con3 .title .tipBtn {
+        padding: 13px 28px;
+        font-size: 1.4rem;
+    }
+    #main .con3 .mImgBox {
+        position: relative;
+        display: block;
+        margin-top: 50px;
+    }
+    #main .con3 .mImgBox .moImg1 {
+        width: 100%;
+    }
+    #main .con3 .mImgBox .moImg2 {
+        width: 141px;
+        margin: 40px 0 0 auto;
+    }
+    #main .con3 .mImgBox .moImg3 {
+        width: 180px;
+        margin: 11vw 0 0;
+    }
+    #main .con3 .mImgBox .moImg4 {
+        width: 100%;
+        box-shadow: -1px 1px 9px rgba(0, 0, 0, 0.3);
+    }
+    #main .con3 .mImgBox img {
+        width: 100%;
+    }
+    #main .con3 .mImgBox .subTxt {
+        display: block;
+        position: relative;
+    }
+    #main .con3 .mImgBox .mtxt1 {
+        width: 225px;
+        height: 252px;
+        margin: -120px 20px 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+        background-color: #d3b887;
+        color: #fff;
+        box-shadow: -7px 7px 25px rgba(0, 0, 0, 0.14);
+    }
+    #main .con3 .mImgBox .mtxt1 img {
+        position: absolute;
+        bottom: 20px;
+        width: 110px;
+    }
+    #main .con3 .mImgBox .mtxt2 {
+        width: 250px;
+        height: 115px;
+        margin: -45px 0 0 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+        background-color: #eeeee7;
+        color: #555;
+        box-shadow: -7px 7px 25px rgba(0, 0, 0, 0.14);
+    }
+    #main .con3 .mImgBox .mtxt2 p {
+        margin-top: 35px;
+    }
+    #main .con3 .mImgBox .etcTxt {
+        width: 145px;
+        margin: 66px 20px 53px auto;
+        font-size: 1.5rem;
+        color: #777;
+    }
+    #main .con3 .mImgBox .etcTxt img {
+        width: 18px;
+    }
+    #main .con3 .hover-area.pc {
+        display: none;
+    }
+    #main .con3 .txt-area {
+        display: none;
+    }
+
+    /* 서브페이지 */
+    .subContBox .subContBox {
+        padding: 0 20px;
+    }
+    .subContBox .boardSearchWrap {
+        flex-direction: column;
+    }
+    .subContBox .boardSearchWrap .boardList {
+        margin: 30px 0 10px;
+        display: none;
+    }
+    .subContBox .boardSearchWrap .selectBox {
+        display: block;
+    }
+    .subContBox .boardSearchWrap .srchInput {
+        width: 100%;
+        margin: 20px 0 30px;
+    }
+    .subContBox .notiList ul li .linkArea {
+        flex-wrap: wrap;
+    }
+    .subContBox .notiList ul li .txtBox {
+        width: 100%;
+        order: 2;
+        margin-bottom: 4vw;
+    }
+    .subContBox .notiList ul li .imgBox {
+        width: 100%;
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .subContBox .notiList ul li .viewBtn {
+        position: relative;
+        bottom: auto;
+        display: inline-block;
+        border-bottom: 1px solid var(--main-black);
+    }
+    .subContBox .notiList ul li .viewBtn::after {
+        display: none;
+    }
+
+    /* 페이징 css */
+    body .pageWrap {
+        padding: 8vw 0 12vw;
+    }
+    body .pageWrap .pageBox a {
+        position: relative;
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        line-height: 27px;
+        margin: 0 3px;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #4b4b4b;
+        vertical-align: middle;
+    }
+    body .pageWrap .pageBox .pageBtn.prev {
+        margin-right: 15px;
+    }
+    body .pageWrap .pageBox .pageBtn.next {
+        margin-left: 15px;
+    }
+    /* 푸터 */
+    #footer .footer-top {
+        padding: 30px 0;
+        background-color: #d5e5e5;
+        background-image: none;
+    }
+    #footer .footer-top ul {
+        flex-wrap: wrap;
+    }
+    #footer .footer-top ul li {
+        width: 100%;
+        margin-right: 0;
+    }
+    #footer .footer-top ul li:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    #footer .footer-top li:hover a::before {
+        display: none;
+    }
+    #footer .footer-top ul li p {
+        margin-bottom: 0;
+        font-size: 2rem;
+    }
+    #footer .footer-top ul li span {
+        font-size: 1.4rem;
+    }
+    #footer .footer-top li:not(:last-child)::after {
+        width: 6px;
+        height: 6px;
+        left: 50%;
+        right: auto;
+        top: auto;
+        transform: translateX(-50%);
+        bottom: -26px;
+    }
+    #footer .footer-wrap {
+        padding: 30px 20px 0;
+    }
+    #footer #topBtn {
+        top: 30px;
+        right: 20px;
+    }
+    #footer .foot-list {
+        margin-top: 45px;
+    }
+    #footer .foot-list .left ul:last-child {
+        margin-top: 35px;
+    }
+    #footer .foot-list .left ul .list-title {
+        text-decoration: underline;
+    }
+    #footer .foot-list ul li:not(.list-title) {
+        flex-wrap: wrap;
+    }
+    #footer .foot-list .left ul li span {
+        width: 100%;
+    }
+    #footer .flow-text {
+        margin-top: 20px;
+        border-top: 1px solid #666;
+    }
+}
+/* 760px 이하 사이즈 끝 */
+
+/* 680px 이하 사이즈 시작 */
+@media screen and (max-width: 680px) {
+    #header .right-box .search-box {
+        display: none;
+    }
+    #header .logo {
+        width: 140px;
+    }
+    .allMenuWrap .menuBox {
+        width: 100%;
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .allMenuWrap .menuBox .mlogo {
+        display: block;
+        position: absolute;
+        top: 30px;
+        width: 140px;
+    }
+    .allMenuWrap .allMenu li span {
+        font-size: 2.2rem;
+    }
+    .allMenuWrap .allMenu .dep2 li {
+        margin-top: 6px;
+        margin-bottom: 0;
+        padding-right: 15px;
+    }
+    .allMenuWrap .allMenu .dep2 ul {
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+    .allMenuWrap .allMenu .dep2 li:not(:last-child):after {
+        right: 8px;
+        height: 10px;
+    }
+    .allMenuWrap.on .schBox {
+        display: block;
+    }
+    /* 메인-콘텐츠4 */
+    #main .con4 {
+        padding-bottom: 80px;
+    }
+    #main .con4 .top-tit span {
+        font-size: 1.5rem;
+    }
+    #main .con4 .top-tit p {
+        font-size: 5rem;
+    }
+    #main .con4 .moreBtn {
+        top: auto;
+        transform: none;
+        bottom: 15px;
+        font-size: 1.3rem;
+    }
+    #main .news-slide {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    #main .news-slide .img-box {
+        padding-top: 56%;
+    }
+    #main .news-slide .swiper-slide:nth-child(2n) .img-box {
+        padding-top: 56%;
+    }
+    #main .con4 .swiper-pagination {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* 공지사항 */
+    /* 공지사항-비주얼이미지 */
+    .subContainer .subVisual {
+        height: 100vh;
+    }
+    .subContainer .subVisual .txtBox dt {
+        font-size: 3.5rem;
+    }
+    .subContainer .subVisual .txtBox dd {
+        font-size: 1.5rem;
+    }
+
+    /* 푸터 */
+    #footer .footer-wrap .foot-logo {
+        width: 140px;
+    }
+    #footer .copyright {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    #footer .copyright p {
+        padding: 0;
+    }
+    #footer .copyright p::after {
+        display: none;
+    }
+    #footer .footer-wrap .copyright a {
+        margin-bottom: 5px;
+        text-decoration: underline;
+    }
+    #footer .flow-text {
+        font-size: 2.2rem;
+    }
+}
+/* 680px 이하 사이즈 끝 */
+
+/* 580px 이하 사이즈 시작 */
+@media screen and (max-width: 550px) {
+    #main .con4 .top-tit {
+        padding: 35px 0;
+    }
+    #main .con4 .top-tit p {
+        font-size: 3rem;
+    }
+    #main .con4 .moreBtn {
+        bottom: 8px;
+    }
+}
+/* 580px 이하 사이즈 시작 */
+
+/* 360px 이하 사이즈 시작 */
+@media screen and (max-width: 360px) {
+    #header {
+        height: auto;
+        line-height: normal;
+    }
+    #header .logo {
+        margin-top: 20px;
+        width: 120px;
+    }
+    #header .right-box {
+        top: 13px;
+    }
+    #header .right-box .lang {
+        margin-right: 12px;
+    }
+    #header .allMenuBtn {
+        top: 30px;
+        width: 26px;
+    }
+    .allMenuWrap .menuBox .mlogo {
+        top: 25px;
+        width: 120px;
+    }
+    /* 메인-콘텐츠2 */
+    #main .con2 .sample-list li button,
+    #main .con2 .sample-list li.on button {
+        font-size: 14px;
+    }
+
+    /* 푸터 */
+    #footer .footer-wrap .foot-logo {
+        width: 120px;
+    }
+    #footer #topBtn {
+        width: 85px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 1.3rem;
+    }
+}
+/* 360px 이하 사이즈 끝 */
