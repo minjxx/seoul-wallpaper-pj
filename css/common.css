@@ -486,6 +486,7 @@ html {
     font-weight: 400;
     color: #fff;
     transition: 0.3s ease;
+    background-color: var(--main-black);
 }
 #footer #topBtn:hover {
     background-color: #fff;
